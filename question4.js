@@ -7,59 +7,14 @@
 // Hint: Two identical strings are considered to be equal to each other.
 
 
+var veganOptions = ['tofurkey', 'fruit salad'];
 
-  var veganOptions = ['fruit salad','tofurkey'];
-  var meatOptions = ['steak', 'pork chops']
-  var choice;
+var menu = prompt("What would you like to choose for dinner?");
 
-  while (choice != veganOptions && meatOptions) {
-    console.log('Time to choose if you want' + veganOptions + 'or' + meatOptions);
-    guess = prompt("What would you like to have for dinner?");
-
-  }
-
-  if (counter == veganOptions) {
-  console.log("This cuisine is vegan friendly!");
-
-  }
-
-  if (counter == meatOptions) {
-  console.log("Vegans beware!");
-
-  }
-
-  else {
-  console.log("You need to choose from the menu!");
-  }
-
-
-// OR
-
-var options;
-var menu = ['fruit salad', 'tofurkey', 'steak', 'pork chops']
-var veganOption1 = 'fruit salad'
-var veganOption2 = 'tofurkey'
-var meatOption1 = 'steak'
-var meatOption2 = 'pork chops'
-
-while (options != menu) {
-  options = prompt("On the menu tonight: Steak, fruit salad, tofurkey and pork chops");
+if (veganOptions.indexOf(veganOptions) >= 0) {
+  alert("This cuisine is vegan friendly!")
 }
-  if (options == veganOption1) {
-    console.log('This cuisine is vegan friendly')
-  }
-  if (options == meatOption1) {
-    console.log('Vegans beware!')
-  }
-  if (options == veganOption2) {
-    console.log('This cuisine is vegan friendly')
-  }
-  if (options == meatOption2) {
-    console.log('Vegans beware!')
-  }
 
- // while (game != secretNumber) {
-//   game = prompt("Guess a number");
-// }
-
-// console.log('Correct!');
+else {
+  alert("Vegans beware!")
+}
